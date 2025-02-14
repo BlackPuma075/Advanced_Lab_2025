@@ -98,31 +98,28 @@ with MPIPool() as pool:
         pool.wait()
         sys.exit(0)
 
-    # Inicializar sampler sin backend HDF5
     sampler = emcee.EnsembleSampler(nwalkers, ndim, log_probability, args=[x, C_eta], pool=pool)
 
-    # Corrida inicial
+    #Corrida inicial (10 steps)
     state = sampler.run_mcmc(p0, 10, progress=True)[0]
 
     sampler.reset()
 
-        # Inicializa una lista para acumular las cadenas
     all_chains = []
     
-    # Loop para guardar cada 100 iteraciones
+    #Loop para guardar cada 100 iteraciones
     for i in range(10):
         sampler.run_mcmc(state, 1000, progress=True)
     
-        if rank == 0:  # Solo el proceso maestro guarda la cadena
-            # Acumula la cadena obtenida
+        if rank == 0: 
             chain = sampler.get_chain()
             all_chains.append(chain.copy())
     
-            # Guardar un checkpoint de la cadena acumulada
+            #Guardar un checkpoint de la cadena acumulada
             np.save(f"chain_checkpoint_{(i+1)*1000}.npy", np.concatenate(all_chains, axis=0))
             print(f"Checkpoint guardado en chain_checkpoint_{(i+1)*1000}.npy")
     
-    # Al final, guardar la cadena completa
+    #Guardar la cadena completa
     if rank == 0:
         np.save("chain_complete.npy", np.concatenate(all_chains, axis=0))
         print("Cadena completa guardada en 'chain_complete.npy'.")
@@ -130,10 +127,9 @@ with MPIPool() as pool:
     print("MCMC completado.")
 
         
-end_time = time.time()  # Guarda el tiempo de finalización
-elapsed_time = end_time - start_time  # Calcula el tiempo total
+end_time = time.time()  #Tiempo de finalización
+elapsed_time = end_time - start_time  #Tiempo total
 
-# Convertir a formato legible (horas:minutos:segundos)
 hours = int(elapsed_time // 3600)
 minutes = int((elapsed_time % 3600) // 60)
 seconds = elapsed_time % 60
