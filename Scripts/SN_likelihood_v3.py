@@ -44,6 +44,7 @@ def lumdist(z, Om,H0):
 
 def log_likelihood(theta, x, cov):
     M_B, dM_B, alpha, beta, Om, H0 = theta #varied parameters
+    #Añadir M_B = M_B  M_{stellar}<10^{10}M_{sun} and M_B = M_B + delta M_B otherwise
     covariance, A = Covariance(cov, alpha, beta)
     cov = np.linalg.pinv(covariance) #covariance matrix
     z, X_1, C, m_b = x #observed data
