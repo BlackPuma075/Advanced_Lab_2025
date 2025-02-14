@@ -12,7 +12,7 @@ comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 
 def Covariance(C_eta, alpha, beta):
-    A = np.zeros((740,3*740))
+    A = np.zeros((740,3*740)) #Cambiar la implementación de A por producto tensorial (I*\vec{A})
     for i in range(740):
         A[i, 3*i] = 1
         A[i, 3*i +1] = alpha
