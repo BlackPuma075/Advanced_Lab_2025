@@ -1,1 +1,1 @@
-Repository for Advanced Lab. class in Cosmology.  
+**Advanced lab. repository**
