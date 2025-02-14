@@ -41,6 +41,7 @@ def lumdist(z, Om,H0):
 
     return  cosmo.luminosity_distance(new_z)
 
+#Añadir función para añadir o no delta M_B (Stellar mass '3rdvar' en dataset)
 
 def log_likelihood(theta, x, cov):
     M_B, dM_B, alpha, beta, Om, H0 = theta #varied parameters
