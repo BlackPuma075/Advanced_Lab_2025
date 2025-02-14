@@ -33,7 +33,7 @@ def eta_matrix(X_1,C,m_b):
 def lumdist(z, Om,H0):
     new_z = np.zeros(3*len(z))
     for i in range(len(z)):
-        new_z[3*i] = z[i]
+        new_z[3*i] = z[i] #Modificar, sólo es un vector de (740)
         new_z[3*i + 1] = z[i]
         new_z[3*i + 2] = z[i]
 
