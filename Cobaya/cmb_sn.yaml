@@ -1,0 +1,51 @@
+likelihood:
+  my_likes.MySupernovaLikelihood:
+    python_path: my_supernova.py
+  planck_2018_lowl.TT: null
+
+
+theory:
+  camb:
+    extra_args:
+      lmax: 2500 
+      halofit_version: mead2020
+
+params:
+  H0:
+    prior: {min: 50, max: 80}
+    ref: {dist: norm, loc: 67, scale: 2}
+    proposal: 1
+    latex: H_0
+  ns:
+    prior: {min: 0.9, max: 1.1}
+    ref: {dist: norm, loc: 0.965, scale: 0.005}
+    proposal: 0.002
+    latex: n_s
+  As: 
+    prior: {min: 1e-10, max: 5e-9}
+    ref: {dist: norm, loc: 2.1e-9, scale: 0.1e-9}
+    proposal: 0.05e-9
+    latex: A_s
+  M_B:
+    prior: {min: -21.0, max: -17.0}  # Prior uniforme entre -21 y -17
+    ref: -19.3  # Valor de referencia
+  dM_B:
+    prior: {min: -1.0, max: 1.0}
+    ref: 0.1
+  alpha:
+    prior: {min: -1.0, max: 1.0}
+    ref: 0.14
+  beta:
+    prior: {min: 0.0, max: 5.0}
+    ref: 3.1
+  Om:
+    prior: {min: 0.2, max: 0.4}
+    ref: 0.3  
+
+sampler:
+  mcmc:
+    burn_in: 500  
+    max_samples: 10000 
+
+output: output/sn_cmb_fits
+
