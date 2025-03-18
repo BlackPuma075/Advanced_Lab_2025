@@ -1,6 +1,6 @@
 likelihood:
-  my_likes.MySupernovaLikelihood:
-    python_path: my_supernova.py
+  my_supernova.MySupernovaLikelihood:
+    python_path: my_supernova
   planck_2018_lowl.TT: null
 
 
