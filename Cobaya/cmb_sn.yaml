@@ -1,6 +1,12 @@
 likelihood:
   my_supernova.MySupernovaLikelihood:
     python_path: my_supernova
+    params:
+      M_B: 19.3
+      Om: 0.3
+      beta: 0.4
+      alpha: 0.1
+      dM_B: 0.01
   planck_2018_lowl.TT: null
 
 
