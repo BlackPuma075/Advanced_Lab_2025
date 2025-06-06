@@ -1,1 +1,4 @@
-**Repository to upload and update advances related to the final project of the course**
+#Advanced lab. final project
+##Deducing $P(k)$ properties using neural networks
+
+
