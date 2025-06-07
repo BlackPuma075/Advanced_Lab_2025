@@ -5,6 +5,12 @@ Here you will find a guide to check the notebooks in this folder.
 
 ---
 
+**Advanced lab. final project (PDF)**
+
+This is the main file in this folder. The report contains all the discussion and results obtained in this work. (*Work still in progress*).
+
+---
+
 **PS_NN**
 
 This is the main notebook which reproduces the results presented in the 'Results' section in the report. This is the notebook you should run, it takes about 5 minutes and reproduces the plots and results presented in the pdf.
