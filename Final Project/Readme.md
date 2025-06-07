@@ -2,6 +2,7 @@
 # ***Deducing $P(k)$ properties using neural networks***
 
 Here you will find a guide to check the notebooks in this folder. 
+*Review it in the order described here*
 
 ---
 
