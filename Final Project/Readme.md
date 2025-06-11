@@ -1,53 +1,64 @@
-# Advanced lab. final project
-# ***Deducing $P(k)$ properties using neural networks***
+# Advanced Lab — Final Project
+## 📊 *Deducing $P(k)$ Properties Using Neural Networks*
 
-Here you will find a guide to check the notebooks in this folder. 
-*Review it in the order described here*
+Welcome to the repository for my Advanced Lab final project. This project explores the use of neural networks to analyze and characterize cosmological power spectra $P(k)$. 
 
----
-
-**Advanced lab. final project_final (PDF)**
-
-This is the main file in this folder. The report contains all the discussion and results obtained in this work. (*Work still in progress*).
+Below you will find a guide to navigate the notebooks and documents in this folder.  
+**⚠️ Please review the files in the order described here.**
 
 ---
 
-**Advanced lab. final project (PDF)**
-
-1st version of the report.
-
----
-
-**PS_NN_final**
-
-This is the main notebook which reproduces the results presented in the 'Results' section in the report (last version). This is the notebook you should run, it takes about 5 minutes and reproduces the plots and results presented in the pdf.
+### 📄 **Advanced_Lab_Final_Project_final (PDF)**
+This is the **main report** of the project (latest version). It contains the full discussion, methodology, and results.  
+> **Status:** *Work in progress.*
 
 ---
 
-**PS_NN**
-
-This is the notebook that reproduces the results presented in the 'Results' section in the report (1st version). 
-
----
-
-**Spectra_production_test**
-
-Here you will find the tests for the computation of the spectra catalog.
+### 📄 **Advanced_Lab_Final_Project (PDF)**
+First version of the report, included for reference and comparison.
 
 ---
 
-**Advanced_Lab_Final_Project_V5**
-
-Here you will find the complete discussion on the neural network architecture, as well as comments in between the code which arguments why we used some architecture or library. This notebook is not fully commented nor ordered.
-
----
-
-**Activation_functions**
-
-This notebook reproduces the Figure 1 in the report. 
+### 📝 **PS_NN_final.ipynb**
+**Main notebook** — reproduces all the results presented in the 'Results' section of the latest report.  
+✅ **Recommended to run this notebook.**  
+⏱️ Approximate runtime: 5 minutes.
 
 ---
 
-**Advanced_Lab_Final_Project_v1,v2,v3,v4**
+### 📝 **PS_NN.ipynb**
+Notebook used to produce the results of the **first** version of the report.
 
-This notebooks are covered in the v5 version, these are only for timeline purposes, not worth seeing them. 
+---
+
+### 📝 **Spectra_production_test.ipynb**
+Test notebook for generating the power spectra catalog. Useful for understanding how the dataset was produced.
+
+---
+
+### 📝 **Advanced_Lab_Final_Project_V5.ipynb**
+Notebook containing an extended discussion of the neural network architecture. Includes code comments explaining the reasoning behind architectural and library choices.  
+> ⚠️ **Note:** This notebook is partially commented and may not be fully ordered.
+
+---
+
+### 📝 **Activation_functions.ipynb**
+Notebook that generates **Figure 1** in the report, illustrating different activation functions.
+
+---
+
+### 📝 **Advanced_Lab_Final_Project_v1, v2, v3, v4**
+Earlier versions of the development notebook, included for timeline and documentation purposes.  
+> ❗ **Not recommended for review** — fully superseded by `V5`.
+
+---
+
+### 📌 Status
+- **Current focus:** Finalizing report and refining results.
+- **Next steps:** Expanding the spectra catalog and further improving the model accuracy.
+
+---
+
+Thank you for visiting this repository!  
+Feel free to open issues or pull requests if you have suggestions.
+
