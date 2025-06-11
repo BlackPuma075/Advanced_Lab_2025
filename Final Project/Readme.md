@@ -6,9 +6,15 @@ Here you will find a guide to check the notebooks in this folder.
 
 ---
 
-**Advanced lab. final project (PDF)**
+**Advanced lab. final project_final (PDF)**
 
 This is the main file in this folder. The report contains all the discussion and results obtained in this work. (*Work still in progress*).
+
+---
+
+**Advanced lab. final project (PDF)**
+
+1st version of the report.
 
 ---
 
