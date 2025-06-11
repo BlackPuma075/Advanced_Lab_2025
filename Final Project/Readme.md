@@ -22,7 +22,7 @@ First version of the report, included for reference and comparison.
 ### 📝 **PS_NN_final.ipynb**
 **Main notebook** — reproduces all the results presented in the 'Results' section of the latest report.  
 ✅ **Recommended to run this notebook.**  
-⏱️ Approximate runtime: 5 minutes.
+⏱️ Approximate runtime: 5-7 minutes.
 
 ---
 
@@ -58,7 +58,4 @@ Earlier versions of the development notebook, included for timeline and document
 - **Next steps:** Expanding the spectra catalog and further improving the model accuracy.
 
 ---
-
-Thank you for visiting this repository!  
-Feel free to open issues or pull requests if you have suggestions.
 
