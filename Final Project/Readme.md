@@ -12,9 +12,15 @@ This is the main file in this folder. The report contains all the discussion and
 
 ---
 
+**PS_NN_final**
+
+This is the main notebook which reproduces the results presented in the 'Results' section in the report (last version). This is the notebook you should run, it takes about 5 minutes and reproduces the plots and results presented in the pdf.
+
+---
+
 **PS_NN**
 
-This is the main notebook which reproduces the results presented in the 'Results' section in the report. This is the notebook you should run, it takes about 5 minutes and reproduces the plots and results presented in the pdf.
+This is the notebook that reproduces the results presented in the 'Results' section in the report (1st version). 
 
 ---
 
